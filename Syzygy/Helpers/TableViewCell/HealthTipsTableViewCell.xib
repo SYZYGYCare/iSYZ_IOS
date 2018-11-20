@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HealthTipsCell" id="KGk-i7-Jjw" customClass="HealthTipsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4LO-jm-fpU">
+                        <rect key="frame" x="5" y="3" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="X60-HV-jHX"/>
+                            <constraint firstAttribute="width" constant="55" id="k70-VW-68l"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySt-cy-Yxk">
+                        <rect key="frame" x="65" y="2" width="225" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="zfz-LA-54W"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ySt-cy-Yxk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Iiu-gY-H50"/>
+                    <constraint firstItem="ySt-cy-Yxk" firstAttribute="leading" secondItem="4LO-jm-fpU" secondAttribute="trailing" constant="5" id="KUs-y9-XNU"/>
+                    <constraint firstItem="4LO-jm-fpU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="U4L-bs-ETK"/>
+                    <constraint firstItem="4LO-jm-fpU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="fde-s9-thS"/>
+                    <constraint firstAttribute="trailing" secondItem="ySt-cy-Yxk" secondAttribute="trailing" constant="10" id="pc2-YK-rAQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="emergencyBackView" destination="F1q-TD-W7f" id="Xqm-lv-n0p"/>
+                <outlet property="healthTipsImageView" destination="4LO-jm-fpU" id="MHd-mN-T6M"/>
+                <outlet property="healthTipsLabel" destination="ySt-cy-Yxk" id="sT3-2N-dOB"/>
+            </connections>
+            <point key="canvasLocation" x="-44" y="-78"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HealthTipsCell2" id="dxp-RY-g0V" customClass="HealthTipsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dxp-RY-g0V" id="3zs-E6-oKe">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VcK-eL-zvu">
+                        <rect key="frame" x="10" y="17.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="SRT-Vc-6bf"/>
+                            <constraint firstAttribute="height" constant="25" id="he4-Hd-ryC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2d4-lM-Bea">
+                        <rect key="frame" x="45" y="2" width="245" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="phq-K4-5mv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VcK-eL-zvu" firstAttribute="leading" secondItem="3zs-E6-oKe" secondAttribute="leading" constant="10" id="J4G-lT-QYA"/>
+                    <constraint firstAttribute="trailing" secondItem="2d4-lM-Bea" secondAttribute="trailing" constant="10" id="KFT-ad-nBp"/>
+                    <constraint firstItem="VcK-eL-zvu" firstAttribute="centerY" secondItem="3zs-E6-oKe" secondAttribute="centerY" id="RXP-RN-NZ4"/>
+                    <constraint firstItem="2d4-lM-Bea" firstAttribute="leading" secondItem="VcK-eL-zvu" secondAttribute="trailing" constant="10" id="kzh-qg-CBy"/>
+                    <constraint firstItem="2d4-lM-Bea" firstAttribute="centerY" secondItem="VcK-eL-zvu" secondAttribute="centerY" id="oym-0C-6V1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="healthTipsImageView" destination="VcK-eL-zvu" id="Wwo-jY-gHb"/>
+                <outlet property="healthTipsLabel" destination="2d4-lM-Bea" id="RDH-5v-C6F"/>
+            </connections>
+            <point key="canvasLocation" x="-44" y="95"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emergencyContact" rowHeight="82" id="iV7-po-fUa" customClass="HealthTipsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iV7-po-fUa" id="eOf-vx-Jdk">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1q-TD-W7f">
+                        <rect key="frame" x="20" y="0.0" width="321" height="65"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telephone" translatesAutoresizingMaskIntoConstraints="NO" id="9VS-Sw-oNa">
+                                <rect key="frame" x="10" y="15" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="MxW-ao-rbb"/>
+                                    <constraint firstAttribute="width" constant="35" id="gV6-yb-qp5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIC-u1-cIH">
+                                <rect key="frame" x="55" y="21.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hIC-u1-cIH" firstAttribute="leading" secondItem="9VS-Sw-oNa" secondAttribute="trailing" constant="10" id="8T8-cC-Xyx"/>
+                            <constraint firstItem="9VS-Sw-oNa" firstAttribute="leading" secondItem="F1q-TD-W7f" secondAttribute="leading" constant="10" id="H9B-0Z-qv8"/>
+                            <constraint firstAttribute="height" constant="65" id="cgj-zL-Zew"/>
+                            <constraint firstItem="hIC-u1-cIH" firstAttribute="centerY" secondItem="9VS-Sw-oNa" secondAttribute="centerY" id="fjb-cP-9sz"/>
+                            <constraint firstItem="9VS-Sw-oNa" firstAttribute="centerY" secondItem="F1q-TD-W7f" secondAttribute="centerY" id="wtZ-rG-dTT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="F1q-TD-W7f" firstAttribute="top" secondItem="eOf-vx-Jdk" secondAttribute="top" id="3IZ-fo-hqW"/>
+                    <constraint firstItem="F1q-TD-W7f" firstAttribute="leading" secondItem="eOf-vx-Jdk" secondAttribute="leading" constant="20" id="4LX-9Q-Y9j"/>
+                    <constraint firstAttribute="trailing" secondItem="F1q-TD-W7f" secondAttribute="trailing" constant="20" id="cvr-67-rKf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="healthTipsImageView" destination="9VS-Sw-oNa" id="OoP-ph-2ix"/>
+                <outlet property="healthTipsLabel" destination="hIC-u1-cIH" id="ctt-71-YS5"/>
+            </connections>
+            <point key="canvasLocation" x="-23.5" y="240"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="telephone" width="35" height="35"/>
+    </resources>
+</document>
